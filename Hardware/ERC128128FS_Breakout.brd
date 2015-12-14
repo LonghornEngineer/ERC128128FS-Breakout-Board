@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -124,17 +124,6 @@
 <libraries>
 <library name="PP_Connectors">
 <packages>
-<package name="ER-CON2.0-2P-SMD">
-<smd name="P$1" x="-1" y="0" dx="1" dy="2.85" layer="1"/>
-<smd name="P$2" x="1" y="0" dx="1" dy="2.85" layer="1"/>
-<smd name="P$3" x="3.25" y="6.375" dx="1.4" dy="3.8" layer="1"/>
-<smd name="P$4" x="-3.25" y="6.375" dx="1.4" dy="3.8" layer="1"/>
-<wire x1="-4.1" y1="8.89" x2="-4.1" y2="-2" width="0.127" layer="21"/>
-<wire x1="-4.1" y1="-2" x2="4.1" y2="-2" width="0.127" layer="21"/>
-<wire x1="4.1" y1="-2" x2="4.1" y2="8.89" width="0.127" layer="21"/>
-<wire x1="4.1" y1="8.89" x2="-4.1" y2="8.89" width="0.127" layer="21"/>
-<text x="-4" y="-3.175" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
-</package>
 <package name="ER-CON31HT-1">
 <description>http://www.buydisplay.com/download/connector/ER-CON31HT-1.pdf</description>
 <smd name="P$1" x="-7.5" y="0" dx="1.25" dy="0.28" layer="1" rot="R90"/>
@@ -176,11 +165,24 @@
 <wire x1="-11" y1="3.81" x2="-11" y2="2.54" width="0.127" layer="21"/>
 <wire x1="11" y1="3.81" x2="11" y2="2.54" width="0.127" layer="21"/>
 </package>
+<package name="ER-CON2.0-2P-SMD">
+<smd name="P$1" x="-1" y="0" dx="1" dy="2.85" layer="1"/>
+<smd name="P$2" x="1" y="0" dx="1" dy="2.85" layer="1"/>
+<smd name="P$3" x="3.25" y="6.375" dx="1.4" dy="3.8" layer="1"/>
+<smd name="P$4" x="-3.25" y="6.375" dx="1.4" dy="3.8" layer="1"/>
+<wire x1="-4.1" y1="8.89" x2="-4.1" y2="-2" width="0.127" layer="21"/>
+<wire x1="-4.1" y1="-2" x2="4.1" y2="-2" width="0.127" layer="21"/>
+<wire x1="4.1" y1="-2" x2="4.1" y2="8.89" width="0.127" layer="21"/>
+<wire x1="4.1" y1="8.89" x2="-4.1" y2="8.89" width="0.127" layer="21"/>
+<text x="4.89" y="-1.905" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-1" y="-3" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL01</text>
+<text x="1" y="-3" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL02</text>
+</package>
 </packages>
 </library>
 <library name="PP_DiscreteSemi">
 <packages>
-<package name="SOT-23">
+<package name="SOT-23-3">
 <wire x1="1.7399" y1="2.2479" x2="1.7399" y2="-2.2479" width="0.1524" layer="21"/>
 <wire x1="1.7399" y1="-2.2479" x2="-1.7399" y2="-2.2479" width="0.1524" layer="21"/>
 <wire x1="-1.7399" y1="-2.2479" x2="-1.7399" y2="2.2479" width="0.1524" layer="21"/>
@@ -188,7 +190,7 @@
 <smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="2.286" y="0.127" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.7399" y="2.667" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -202,20 +204,16 @@
 <wire x1="-1.6002" y1="-0.762" x2="-1.6002" y2="0.762" width="0.0508" layer="21"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-1.473" y="1.197" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.6002" y="1.016" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 </package>
 <package name="1206">
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="21"/>
+<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="21"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="21"/>
+<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="21"/>
 <smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-2.54" y="1.143" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<text x="-2.4" y="1.2" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -467,9 +465,6 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="PP_Connectors" package="ER-CON2.0-2P-SMD" value="ER-CON2.0-2P-SMD" x="36.83" y="26.67" smashed="yes">
-<attribute name="NAME" x="39.18" y="23.495" size="0.8128" layer="25" font="vector" ratio="16"/>
-</element>
 <element name="J3" library="PP_Connectors" package="ER-CON31HT-1" value="ER-CON31HT-1" x="21.59" y="31.242" smashed="yes">
 <attribute name="LABEL03" value="PS2" x="45.72" y="7.112" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL04" value="!CS" x="45.72" y="7.112" size="1.778" layer="27" display="off"/>
@@ -504,7 +499,7 @@ design rules under a new name.</description>
 <attribute name="LABEL02" value="PS1" x="45.72" y="7.112" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="30.64" y="30.714" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="U1" library="PP_DiscreteSemi" package="SOT-23" value="PMV160UP,215" x="34.29" y="20.828" smashed="yes" rot="R270">
+<element name="U1" library="PP_DiscreteSemi" package="SOT-23-3" value="PMV160UP,215" x="34.29" y="20.828" smashed="yes" rot="R270">
 <attribute name="NAME" x="31.496" y="22.733" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="R4" library="PP_Passives" package="0603" value="22" x="35.052" y="23.622" smashed="yes">
@@ -561,10 +556,14 @@ design rules under a new name.</description>
 </element>
 <element name="FID1" library="MF_Aesthetics" package="FIDUCIAL_0.5MM" value="FIDUCIAL_0.5MM" x="38.862" y="20.828"/>
 <element name="FID2" library="MF_Aesthetics" package="FIDUCIAL_0.5MM" value="FIDUCIAL_0.5MM" x="12.446" y="29.972"/>
+<element name="J1" library="PP_Connectors" package="ER-CON2.0-2P-SMD" value="ER-CON2.0-2P-SMD" x="36.83" y="26.67" smashed="yes">
+<attribute name="LABEL02" value="" x="37.83" y="23.67" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left"/>
+<attribute name="LABEL01" value="" x="35.83" y="23.67" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left"/>
+<attribute name="NAME" x="39.434" y="23.495" size="0.8128" layer="25" font="vector" ratio="16"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="J1" pad="P$2"/>
 <contactref element="J3" pad="P$2"/>
 <contactref element="J3" pad="P$1"/>
 <contactref element="J2" pad="P$2"/>
@@ -628,11 +627,11 @@ design rules under a new name.</description>
 <wire x1="30.988" y1="25.566" x2="30.988" y2="24.13" width="0.2032" layer="1"/>
 <via x="30.988" y="24.13" extent="1-16" drill="0.5"/>
 <wire x1="30.988" y1="24.13" x2="30.988" y2="23.368" width="0.2032" layer="16"/>
-<wire x1="37.83" y1="26.67" x2="37.83" y2="23.638" width="0.2032" layer="1"/>
-<wire x1="37.83" y1="23.638" x2="37.846" y2="23.622" width="0.2032" layer="1"/>
-<via x="37.846" y="23.622" extent="1-16" drill="0.5"/>
-<wire x1="37.846" y1="23.622" x2="37.846" y2="23.368" width="0.2032" layer="16"/>
-<wire x1="37.846" y1="23.368" x2="38.1" y2="23.114" width="0.2032" layer="16"/>
+<contactref element="J1" pad="P$2"/>
+<wire x1="37.83" y1="26.67" x2="37.83" y2="24.146" width="0.254" layer="1"/>
+<wire x1="37.83" y1="24.146" x2="38.1" y2="23.876" width="0.254" layer="1"/>
+<via x="38.1" y="23.876" extent="1-16" drill="0.5"/>
+<wire x1="38.1" y1="23.876" x2="38.608" y2="23.876" width="0.254" layer="16"/>
 </signal>
 <signal name="3.3V">
 <contactref element="U1" pad="2"/>
@@ -740,10 +739,10 @@ design rules under a new name.</description>
 <wire x1="30.834" y1="21.778" x2="33.19" y2="21.778" width="0.2032" layer="1"/>
 </signal>
 <signal name="A">
-<contactref element="J1" pad="P$1"/>
 <contactref element="R4" pad="2"/>
 <wire x1="35.902" y1="23.622" x2="35.83" y2="23.694" width="0.254" layer="1"/>
-<wire x1="35.83" y1="23.694" x2="35.83" y2="26.67" width="0.2032" layer="1"/>
+<contactref element="J1" pad="P$1"/>
+<wire x1="35.83" y1="23.694" x2="35.83" y2="26.67" width="0.254" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R4" pad="1"/>
