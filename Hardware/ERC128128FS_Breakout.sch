@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1865,8 +1865,8 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <attribute name="LABEL12" value="DB3"/>
 <attribute name="LABEL13" value="DB4"/>
 <attribute name="LABEL14" value="DB5"/>
-<attribute name="LABEL15" value="DB6_SCL"/>
-<attribute name="LABEL16" value="DB7_SDA"/>
+<attribute name="LABEL15" value="DB6_SDA"/>
+<attribute name="LABEL16" value="DB7_SCL"/>
 <attribute name="LABEL17" value="VDD"/>
 <attribute name="LABEL18" value="VDD"/>
 <attribute name="LABEL19" value="VDD"/>
@@ -1899,14 +1899,14 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <attribute name="LABEL00" value="3.3V"/>
 <attribute name="LABEL01" value="GND"/>
 <attribute name="LABEL02" value="LCD_RST"/>
-<attribute name="LABEL03" value="LCD_SCL"/>
-<attribute name="LABEL04" value="LCD_SDA"/>
+<attribute name="LABEL03" value="LCD_SDA"/>
+<attribute name="LABEL04" value="LCD_SCL"/>
 <attribute name="LABEL05" value="LCD_BKLT"/>
 </part>
 <part name="C1" library="MF_Passives" deviceset="CAPACITOR_P" device="_4MM" value="10uF"/>
 <part name="U$1" library="PP_Aesthetics" deviceset="LHE_FRAME" device="">
 <attribute name="DNAME" value="Parker Dillmann"/>
-<attribute name="REVNUM" value="REV: 1"/>
+<attribute name="REVNUM" value="REV: 2"/>
 </part>
 <part name="FID1" library="MF_Aesthetics" deviceset="FIDUCIAL" device="_0.5MM"/>
 <part name="FID2" library="MF_Aesthetics" deviceset="FIDUCIAL" device="_0.5MM"/>
@@ -2107,6 +2107,20 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 </net>
 <net name="LCD_SCL" class="0">
 <segment>
+<pinref part="J3" gate="G$1" pin="PIN16"/>
+<wire x1="-22.86" y1="83.82" x2="-48.26" y2="83.82" width="0.1524" layer="91"/>
+<label x="-33.02" y="83.82" size="1.016" layer="95" font="vector"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-48.26" y1="83.82" x2="-48.26" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="PIN4"/>
+<wire x1="-86.36" y1="73.66" x2="-99.06" y2="73.66" width="0.1524" layer="91"/>
+<label x="-93.98" y="73.66" size="1.016" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="LCD_SDA" class="0">
+<segment>
 <pinref part="J3" gate="G$1" pin="PIN15"/>
 <wire x1="-22.86" y1="86.36" x2="-35.56" y2="86.36" width="0.1524" layer="91"/>
 <label x="-33.02" y="86.36" size="1.016" layer="95" font="vector"/>
@@ -2130,20 +2144,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="J2" gate="G$1" pin="PIN3"/>
 <wire x1="-99.06" y1="76.2" x2="-86.36" y2="76.2" width="0.1524" layer="91"/>
 <label x="-93.98" y="76.2" size="1.016" layer="95" font="vector"/>
-</segment>
-</net>
-<net name="LCD_SDA" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="PIN16"/>
-<wire x1="-22.86" y1="83.82" x2="-48.26" y2="83.82" width="0.1524" layer="91"/>
-<label x="-33.02" y="83.82" size="1.016" layer="95" font="vector"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-48.26" y1="83.82" x2="-48.26" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="PIN4"/>
-<wire x1="-86.36" y1="73.66" x2="-99.06" y2="73.66" width="0.1524" layer="91"/>
-<label x="-93.98" y="73.66" size="1.016" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="LCD_RST" class="0">
