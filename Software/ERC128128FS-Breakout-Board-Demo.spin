@@ -48,6 +48,11 @@ PUB MAIN | i
     i++
     if(i > 9)
       i := 0
+      LCD_CLEAR
+        LCD_MOVE(0, 0)
+        LCD_STR(STRING("HELLO WORLD!!!"))
+        LCD_MOVE(0, 3)
+        LCD_STR(STRING("MACROFAB IS AWESOME"))
     waitcnt(cnt+clkfreq/2)
       
 
